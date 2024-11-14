@@ -37,7 +37,7 @@ const projects = [
 
 const Portfolio = () => {
     return (
-        <div id="portfolio" className="text-white bg-black bg-gradient-to-b from-black to-[#381a5f] py-18 mt-52" id="portfolio">
+        <div id="portfolio" className="text-white bg-black bg-gradient-to-b from-black to-[#381a5f] py-18 mt-52">
             <h1 className='text-white text-6xl max-w-[320px] mx-auto font-semibold my-12 text-center'>
                 My <span className='text-orange-400'>Projects</span>
             </h1>

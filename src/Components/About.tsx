@@ -24,7 +24,7 @@ const About = () => {
             <Image src={book} alt='book' className="w-auto h-[80px] sm:h-[100px] md:h-[130px]" />
             <div className='flex flex-col mt-4'>
               <h2 className='text-lg font-bold text-white/80'>Education</h2>
-              <p className='text text-white/70 mt-2'>I'm a Pre-Final year student pursuing a degree in Computer Science and Engineering and my focus is on Full-stack Development.</p>
+              <p className='text text-white/70 mt-2'>I&apos;m a Pre-Final year student pursuing a degree in Computer Science and Engineering and my focus is on Full-stack Development.</p>
             </div>
           </div>
         </div>
