@@ -39,9 +39,9 @@ const NavBar = () => {
     };
 
     return (
-        <div className='text-white/70 pt-6'>
-            <div className='hidden md:flex item-center px-4 py-2 mx-auto max-w-[400px]'>
-                <ul className='flex flex-row p-4 space-x-8'>
+        <div className='text-white/70'>
+            <div className='hidden md:flex justify-center mx-auto'>
+                <ul className='flex flex-row p-8 space-x-8'>
                     {navLinks.map((link, index) => (
                         <li key={index} className="relative group">
                             <ScrollLink 
@@ -49,23 +49,11 @@ const NavBar = () => {
                                 smooth={true} 
                                 duration={500} // Duration of the scroll animation
                             >
-                                <p>{link.title}</p>
+                            {link.title}
                             </ScrollLink>
                             <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full"></span>
                         </li>
                     ))}
-                    {/* <li className="relative group">
-                        <ScrollLink 
-                            to="contact" 
-                            smooth={true} 
-                            duration={500} 
-                        >
-                            <h1 className='text-lg text-white/70 cursor-pointer'>
-                                Contact Me
-                            </h1>
-                        </ScrollLink>
-                        <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full"></span>
-                    </li> */}
                 </ul>
             </div>
 
@@ -77,9 +65,10 @@ const NavBar = () => {
                 initial={false}
                 animate={nav ? 'open' : 'closed'}
                 variants={menuVariants}
-                className='fixed left-0 top-0 w-full z-40 bg-black/70'
+                // className='fixed left-0 top-0 bottom-0 right-0 w-full h-screen z-40 bg-blue'
+                className="fixed justify-center items-center z-20"
             >
-                <ul className='text-4xl font-semibold my-24 text-center space-y-8'>
+                <ul className='text-lg font-semibold my-24 text-center space-y-8'>
                     {navLinks.map((link, index) => (
                         <li key={index} className="relative group">
                             <ScrollLink 
@@ -93,17 +82,6 @@ const NavBar = () => {
                             <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full"></span>
                         </li>
                     ))}
-                    {/* <li className="relative group">
-                        <ScrollLink 
-                            to="contact" 
-                            smooth={true} 
-                            duration={500} 
-                            onClick={closeNav}
-                        >
-                            Contact Me
-                        </ScrollLink>
-                        <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full"></span>
-                    </li> */}
                 </ul>
             </motion.div>
         </div>

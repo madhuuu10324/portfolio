@@ -12,8 +12,8 @@ const skillIcons = [
 
 const Skills = () => {
     return (
-        <div className="bg-gradient-to-t from-black to-[#381a5f] py-32">
-            <div className='text-white max-w-[950px] mx-auto p-8 text-center'>
+        <div className="bg-gradient-to-t from-black to-[#381a5f]">
+            <div className='flex flex-col justify-center'>
                 <h2 className='text-6xl font-bold mb-4'>What I Do</h2>
                 <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6'>
                     {skillIcons.map((skill, index) => (
